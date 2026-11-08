@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean — Coffee House</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+
+            <a href="#home" class="logo">
+                BREW & BEAN.
+            </a>
+
+<button
+    class="menu-toggle"
+    type="button"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="main-navigation"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+            <nav class="navigation" id="main-navigation" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="mobile-book-link">
+    Book a Table
+</a>
+            </nav>
+
+            <a href="#contact" class="book-btn">
+                Book a Table
+            </a>
+
+        </div>
+    </header>
+
+    <main id="home">
+        <!-- Тут пізніше створимо Hero, Menu, About і Contact -->
+         <section class="hero">
+        
+        <div class="hero-container">
+        <div class="hero-content">
+        <h1>Your Daily Moment of Coffee.</h1>
+        <p>Fresh coffee, warm atmosphere, unforgettable moments.</p>
+        <a class="hero-btn" href="#menu">Explore Our Menu</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero-coffee.png" alt="coffee">
+        </div>
+        </div>
+    </section>
+    <section class="menu-section" id="menu">
+        <div class="menu-container">
+            <div class="menu-content">
+                <h2>Our Coffee Menu</h2>
+                <p>Discover your new favorite coffee.</p>
+                <div class="coffee-filters">
+                    <button aria-pressed="true" type="button" data-filter="all" class="is-active">
+                        All Coffee
+                    </button>
+                    <button aria-pressed="false" type="button" data-filter="hot">
+                        Hot Coffee
+                    </button>
+                    <button aria-pressed="false" type="button" data-filter="cold">
+                        Iced Coffee
+                    </button>
+                </div>
+                <div class="coffee-grid">
+                    <div class="coffee-card" data-category="hot">
+                        <img src="assets/espresso.png" alt="espresso">
+                        <h3>Espresso</h3>
+                        <p>Rich and aromatic classic coffee.</p>
+                        <div class="coffee-price">
+                        <p>$3.50</p>
+                        </div>
+                    </div>
+                    <div class="coffee-card" data-category="hot">
+                        <img src="assets/cappucino.png" alt="cappucino">
+                        <h3>Cappuccino</h3>
+                        <p>Smooth espresso with creamy milk foam.</p>
+                        <div class="coffee-price">
+                        <p>$4.50</p>
+                        </div>
+                    </div>
+                    <div class="coffee-card" data-category="cold">
+                        <img src="assets/iced latte.png" alt="iced latte">
+                        <h3>Iced Latte</h3>
+                        <p>Chilled espresso with silky milk and ice.</p>
+                        <div class="coffee-price">
+                        <p>$5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/about.png" alt="about">
+            </div>
+            <div class="about-content">
+                <p class="about-label">OUR STORY</p>
+                <h2>More Than Just Coffee.</h2>
+                <p>At Brew & Bean, every cup tells a story. We believe great coffee brings people together. From carefully selected beans to a warm, welcoming space, every detail is made for your daily pause.</p>
+                <a class="about-btn" href="#about">Discover Our Story</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="contact-content">
+                <h2>Find Us & Say Hello</h2>
+                <p>We'd love to see you!</p>
+            </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-address">
+                    <h3>Our Location</h3>
+                    <p>Address coming soon</p>
+                </div>
+                <div class="contact-hours">
+                    <h3>Opening Hours</h3>
+                    <p>Daily: 08:00-21:00</p>
+                </div>
+                <div class="contact-phone">
+                    <h3>Contact Us</h3>
+                    <p>Phone number</p>
+                </div>
+            </div>
+            <div class="contact-map">
+                <p>Our Location</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-conteiner">
+            <div class="footer-brand">
+                <h2>BREW & BEAN.</h2>
+                <p>Crafting moments, one cup at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+                <a href="">TikTok</a>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="current-year">2026</span> Brew & Bean. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <button id="back-to-top" type="button">
+        ↑
+    </button>
+    <script src="script.js"></script>
+    
+</body>
+</html>
